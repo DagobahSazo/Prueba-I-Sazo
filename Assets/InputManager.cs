@@ -6,6 +6,7 @@ using UnityEngine.InputSystem;
 public class InputManager : MonoBehaviour
 {
     public static event System.Action OnJump;
+    public static event System.Action OnPause;
     public static event System.Action<Vector2> OnPlayerMovement;
     [SerializeField] private PlayerInput playerInput;
 
@@ -33,6 +34,21 @@ public class InputManager : MonoBehaviour
 
             case "Jump":
                 if (context.started) OnJump?.Invoke(); break;
+
+            case "Pause":
+                if (context.started) OnPause?.Invoke(); break;
+
         }
     }
 }
+
+
+//HASHIRE SORI YO KAZE NO YOU NI TSUKIMIHARA WO PADORU PADORU
+//QUE LINDO MI PROFESOR
+//HASHIRE SORI YO KAZE NO YOU NI TSUKIMIHARA WO PADORU PADORU
+//QUE LINDO MI PROFESOR
+//HASHIRE SORI YO KAZE NO YOU NI TSUKIMIHARA WO PADORU PADORU
+//QUE LINDO MI PROFESOR
+//HASHIRE SORI YO KAZE NO YOU NI TSUKIMIHARA WO PADORU PADORU
+//QUE LINDO MI PROFESOR
+//HASHIRE SORI YO KAZE NO YOU NI TSUKIMIHARA WO PADORU PADORU
